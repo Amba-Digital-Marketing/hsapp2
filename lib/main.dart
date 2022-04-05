@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:untitled4/welcomepage.dart';
+import 'package:hsapp2/welcomepage.dart';
 
 
 void main() {
