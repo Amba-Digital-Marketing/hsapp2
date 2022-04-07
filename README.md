@@ -40,7 +40,8 @@ samples, guidance on mobile development, and a full API reference.
 
 
 Structure
-     -models
+
+       -models
 
        -user.dart
 
@@ -54,7 +55,7 @@ Structure
 
        -main.dart
 
-      -home.dart
+       -home.dart
 
 -test
 
