@@ -18,49 +18,49 @@ samples, guidance on mobile development, and a full API reference.
 
 **Hannah And Serge App Project Structure**
 
->android
+-android
 
->assets
+-assets
 
-  >fonts
+  -fonts
 
-  >images
+  -images
 
-  >logo
+  -logo
 
-  >vidoes
+  -vidoes
 
->cloud_functions
+-cloud_functions
 
->integration_test
+-integration_test
 
->ios
+-ios
 
->lib
+-lib
 
-  >models
+  -models
 
-       >user.dart
+       -user.dart
 
-  >providers
+  -providers
 
-  >utilities
+  -utilities
 
-  >widgets
+  -widgets
 
-  >screens
+  -screens
 
-      >main.dart
+      -main.dart
 
-      >home.dart
+      -home.dart
 
->test
+-test
 
->web
+-web
 
->windows
+-windows
 
->linux
+-linux
 
 
 
