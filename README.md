@@ -37,20 +37,20 @@ samples, guidance on mobile development, and a full API reference.
 -ios
 
 -lib
-
-  -models
+|
+     -models
 
        -user.dart
 
-  -providers
+       -providers
 
-  -utilities
+       -utilities
 
-  -widgets
+       -widgets
 
-  -screens
+       -screens
 
-      -main.dart
+       -main.dart
 
       -home.dart
 
