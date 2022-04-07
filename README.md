@@ -37,7 +37,9 @@ samples, guidance on mobile development, and a full API reference.
 -ios
 
 -lib
-|
+
+
+Structure
      -models
 
        -user.dart
