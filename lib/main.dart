@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:hsapp2/welcomepage.dart';
 import 'package:hsapp2/home_widget.dart';
+import 'package:hsapp2/NavBar.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Timer(
         Duration(seconds: 3),
         () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => WelcomePage())));
+            context, MaterialPageRoute(builder: (context) =>  NavBar() )));
   }
 
   @override

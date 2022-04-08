@@ -1,6 +1,7 @@
 import 'package:hsapp2/home.dart';
 import 'package:flutter/material.dart';
 import 'package:hsapp2/loans.dart';
+import 'package:hsapp2/NavBar.dart';
 
 class HomeWidget extends StatefulWidget {
   @override
@@ -27,6 +28,7 @@ class _HomeWidgetState extends State<HomeWidget> {
     }
 
     return Scaffold(
+      drawer: NavBar(),
       body: widgetOptions.elementAt(selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.black,
