@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hsapp2/Views/StatefulWidgets/Others/HomeWidget.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key, String title = "Login"}) : super(key: key);
@@ -18,6 +19,7 @@ class _LoginState extends State<Login> {
     double height = MediaQuery.of(context).size.height;
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(200, 10, 15, 19),
@@ -174,44 +176,16 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                   ),
+
                 ],
 
               ),
-              Align(
-                alignment: Alignment(0.5,-1),
-                child: Expanded(
-                  child: Container(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        BottomNavigationBar(
-                          items: const <BottomNavigationBarItem>[
-                            BottomNavigationBarItem(
-                              icon: Icon(Icons.lock),
-                              label: 'Login',
-                            ),
-                            BottomNavigationBarItem(
-                              icon: Icon(Icons.location_on),
-                              label: 'Location',
-                            ),
-                            BottomNavigationBarItem(
-                              icon: Icon(Icons.add_ic_call),
-                              label: 'Contact us',
-                            ),
 
-                          ],
-                          //currentIndex: _selectedIndex,
-                          selectedItemColor: Colors.amber[800],
-                          // onTap: _onItemTapped,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              )
+
             ],
 
           ),
+
         ),
       ),
 

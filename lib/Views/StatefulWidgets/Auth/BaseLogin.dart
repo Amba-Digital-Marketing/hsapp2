@@ -20,6 +20,7 @@ class BaseLogin extends StatelessWidget {
         builder: (context) {
 
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             title: 'BaseLogin',
             home: SafeArea(
               child: Container(
@@ -134,7 +135,7 @@ class BaseLogin extends StatelessWidget {
 
                           TextButton(
                             onPressed: ()=>{
-                              Navigator.pushNamed(context, '/Login'),
+                              Navigator.pushNamed(context, '/HomeWidget'),
                             },
                             child: const Text("Sign In"),
                             style: ButtonStyle(
