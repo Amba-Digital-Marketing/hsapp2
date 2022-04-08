@@ -1,136 +1,105 @@
-# hsapp2
+# folder
  
-**Micro-credit  application**
- 
-Flutter gives its developers a lot of freedom in terms of architectural choices and other software and codebase-related decisions. It does not have a strong opinion on folder structure, file conventions, etc. This can be a blessing as well as a pain. Blessing in the sense that the developer is free to fine-tune the project and directory structure according to his/her needs and the needs of the project; while at the same time the lack of defined structure can make large projects extremely difficult to manage.
-The community has adopted some patterns and two of the most popular ones are Folder By Type/Domain and Folder By Feature.
+ A simple banking app
 
-**Folders By Type/Domain**
-By far the most common pattern among Flutter developers, the folder by type patterns suggests organizing files according to their functionality/type. For example, all screens would go in a folder called screens or something similar, data models go into a folder called models or similar, and so on. This pattern is extremely intuitive and very beginner-friendly. This pattern works well with smaller projects but as soon as you start having more than 10–15 files of each type, it quickly gets extremely difficult to manage and maintain. Most of the developer time is spent searching for the right file and hence this pattern does not scale well for large projects.
+Project Details
 
---lib
+Application Fragments to be Worked on CROSS-PLATFORM VERSION 
 
-  |--screens
-  
-  |--widgets
-  
-  |--services
-  
-  |--view_models
-  
-  |--services
-  
-  |-- ...
-  
-**Folders By Feature**
-If you have a large project, the folders by feature pattern is the way to go. It scales well and organizes files in its feature folder. The core concept is to have folders as per the features in the application which ensures that the screens, widgets, controllers, services for that particular feature are all contained within a single folder. This pattern may be overkill for a small project or difficult to foresee for a project that does not have well-defined features.
+DEVELOPMENT FRAMEWORK
 
---lib
-  |--feature_1
-  
-  |  |--screens
-  
-  |  |--widgets
-  
-  |  |--models
-  
-  |  |--services
-  
-  |  |--view_models
-  
-  |--feature_2
-  
-  |  |--screens
-  
-  |  |--widgets
-  
-  |  |--models
-  
-  |  |--services
-  
-  |  |--view_models
-  
-  |....
-  
-To help with the folder by feature pattern, I authored a very opinionated CLI tool that generates the folder structure and the required files within them to provide an excellent structure for code organization, testing while still being maintainable and easy to use.
-It generates a folder structure like below:
+-UI designs Implementation
 
-feature1/
+-Figma Designs -Back-end Integrations 
 
-┣ domain/
+-API Documentation 
 
-┃ ┣ models/
+-User Testing 
 
-┃ ┃ ┗ feature1_model.dart
+-IOS PlayStore Deployment
+-Android PlayStore Deployment
 
-┃ ┣ repository/
+-Project Documentation
+-Test Documentation 
 
-┃ ┃ ┗ feature1_repository.dart
+FUNNCTIONALITIES TO BE IMPLEMENTED
 
-┃ ┣ services/
+-Paid APIS Functionality 
 
-┃ ┃ ┗ feature1_service.dart
+-Login 
 
-┃ ┗ feature1_domain.dart
+-Registration
 
-┣ providers/
+-MPESA Payment 
 
-┃ ┣ feature1_provider.dart
+-Pay Beneficiary 
 
-┃ ┗ providers.dart
+-Bank To Bank Transfer
 
-┣ screens/
+-Use Bank to Pay People 
 
-┃ ┣ feature1_screen.dart
+-Investment Package 
 
-┃ ┗ screens.dart
+-Pay Loans Module 
 
-┣ widgets/
+-Deposit History 
 
-┃ ┣ feature1_widget.dart
+-Investment History
 
-┃ ┗ widgets.dart
+-Transaction History 
 
-┗ index.dart
+-Bills Payment Module
 
-**The different components in the folder structure are:**
+-Deposit Cash Module 
 
-Domain → Models — contains all the data models and JSON to/from Dart helper functions
+-Withdraw Cash Module
 
-Domain → Repository — contains abstract classes that describe the feature functionality
+-Location Module 
 
-Domain → Services — contains the actual implementation of the repository
+-Create a Ticket 
 
-Providers — contains everything related to the state for that particular feature
 
-Screens — contains full screens that have a Scaffold
+-Settings to allow the client adjust the Internal State of the Application
 
-Widgets — contains all the widgets required for that particular feature
+-Logout 
 
-Each of the folders has a common export file that simply exports everything which enables us to tidy up our imports when importing multiple things from the same feature.
+-Account Details Added Functionality
 
-**feature_folder_cli | Flutter Package**
+-Biometric Verification Modules
 
-A Dart CLI tool that generates the folder structure for the folder-by-feature pattern. This tool helps to reduce the…
-pub.dev
+-Inter-Currency Conversion 
 
-Bonus Tip
-Another great approach to code organization and modularity is extracting common pieces of code into packages. This can be done by either publishing a package to pub.dev, uploading to a remote git repository, or the easiest way, by having them in the same codebase as separate folders in a packages folder in the project root.
+-Payment for Members Both in H$S external members
 
---lib
+-Internal SMS notifications
 
---packages
+-Print PDF for internal statements
 
-  |--pkg_1
-  
-  |  |--lib
-  
-  |  |--pubspec.yaml
+#Image UI Designs
 
-Each package would have its pubspec.yaml file that would contain dependencies only for that package. The packages can then be imported using the following in the project pubspec.yaml file:
+![Simulator Screen Shot - iPhone 13 - 2022-01-18 at 03 22 27](https://user-images.githubusercontent.com/33089347/160779100-025488b8-640e-459f-b56f-d399c5b7d2e2.png)
 
-pkg_1:
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-09-13 at 19 28 58](https://user-images.githubusercontent.com/33089347/160779174-884ad2b9-8c70-462e-92f8-5ecd8a379a1a.png)
 
-  path: ./packages/pkg_1
+![Simulator Screen Shot - iPhone 13 - 2022-01-18 at 03 31 07](https://user-images.githubusercontent.com/33089347/160779186-41797e8a-2143-4731-b93f-c5b38de8bc0c.png)
 
-In conclusion, the choice depends on the scale of the project you are undertaking but having an opinionated pattern for larger projects is the way to go as it brings consistency at the cost of some boilerplate code which is a good deal in most cases.
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-09-13 at 19 12 02](https://user-images.githubusercontent.com/33089347/160779323-ffbd0523-3480-43a1-9763-6925535e9ff6.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-09-13 at 19 12 19](https://user-images.githubusercontent.com/33089347/160779428-29eba118-f251-4a27-aa7d-bbbc17eb516d.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-10-11 at 19 09 30](https://user-images.githubusercontent.com/33089347/160779447-bae486bf-677e-4e90-8a68-bac40fc178c4.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-09-13 at 19 28 54](https://user-images.githubusercontent.com/33089347/160779496-da297c39-0a6a-429b-a76e-b0b689cf5bcb.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-10-11 at 19 09 37](https://user-images.githubusercontent.com/33089347/160779569-8587b44a-25d8-48f8-89d9-85372dc06acf.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-09-13 at 19 28 58](https://user-images.githubusercontent.com/33089347/160779568-a3518bea-7abb-42dc-af63-fa4b6aa71f09.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-10-11 at 19 09 48](https://user-images.githubusercontent.com/33089347/160779693-87403c8a-ea70-41c6-a07f-c12904dc8c90.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-10-11 at 19 09 30](https://user-images.githubusercontent.com/33089347/160779747-ffa60895-969c-456d-b612-5453fee1a328.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-10-11 at 19 09 52](https://user-images.githubusercontent.com/33089347/160779808-b94582f2-c724-4318-b11f-dd4379e79587.png)
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-10-11 at 19 09 37](https://user-images.githubusercontent.com/33089347/160779851-0fa4ff2c-7c2a-475b-b27d-155039261440.png)
+
