@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hsapp2/LoginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:hsapp2/bezierContainer.dart';
 import 'package:hsapp2/SignUpPage.dart';
 import 'package:hsapp2/home_widget.dart';
