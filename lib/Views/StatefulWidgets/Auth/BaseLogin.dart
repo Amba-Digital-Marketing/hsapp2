@@ -127,30 +127,38 @@ class BaseLogin extends StatelessWidget {
                               padding:MaterialStateProperty.all<EdgeInsets>(
                                 EdgeInsets.all(20),
                               ),
-                            fixedSize: MaterialStateProperty.all(Size(200, 56))
+                            fixedSize: MaterialStateProperty.all(Size(200, 50))
                             ),
                           ),
 
                           SizedBox(height: 20,),
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              color: Colors.red,
 
-                          TextButton(
-                            onPressed: ()=>{
-                              Navigator.pushNamed(context, '/HomeWidget'),
-                            },
-                            child: const Text("Sign In"),
-                            style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Colors.red),
-                              foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.white),
-                              shape: MaterialStateProperty.all(
-                                RoundedRectangleBorder(borderRadius: BorderRadius.circular(1)),
-                              ),
-                              padding:MaterialStateProperty.all<EdgeInsets>(
-                                EdgeInsets.all(20),
+                            ),
+                            child: TextButton(
+                              onPressed: (){
+                                Navigator.pushNamed(context, '/HomeWidget');
+                              },
+                              child: const Text("Sign In"),
+                              style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(Colors.white),
+                                  foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.red),
+                                  // padding: MaterialStateProperty.all(EdgeInsets.all(10)),
+                                  shape: MaterialStateProperty.all(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(5),
 
+                                    ),
+
+                                  ),
+                                  fixedSize: MaterialStateProperty.all(Size(200, 50))
                               ),
-                              fixedSize: MaterialStateProperty.all(Size(200, 56))
                             ),
                           ),
+
                         ],
                       )
                     ],
