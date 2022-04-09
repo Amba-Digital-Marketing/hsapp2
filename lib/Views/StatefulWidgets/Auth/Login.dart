@@ -24,6 +24,7 @@ class _LoginState extends State<Login> {
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(200, 10, 15, 19),
           title: const Text("Welcome to H&S GROUP"),
+          centerTitle: true,
           leading: new IconButton(onPressed: () {
             Navigator.pop(context);
           },
@@ -160,7 +161,7 @@ class _LoginState extends State<Login> {
 
                                 TextButton(
                                     onPressed: () {
-
+                                      Navigator.pushNamed(context, "/Register");
                                     },
                                     style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.green)),
                                     child: Text("or create new Account")
