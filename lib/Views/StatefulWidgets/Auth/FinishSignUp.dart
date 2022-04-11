@@ -63,7 +63,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          DefaultTextStyle(
+                          const DefaultTextStyle(
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   color: AppColors.red
@@ -78,7 +78,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                           ),
                           SizedBox(height: 3,),
 
-                          DefaultTextStyle(
+                          const DefaultTextStyle(
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   color: AppColors.red
@@ -120,7 +120,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                           ),
                           SizedBox(height: 3,),
 
-                          DefaultTextStyle(
+                          const DefaultTextStyle(
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   color: AppColors.red
@@ -166,7 +166,9 @@ class _FinishSignUpState extends State<FinishSignUp> {
                           ),
 
                           TextButton(
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.pushNamed(context, "/Dashboard");
+                            },
                             child: const Text("Complete Sign Up"),
                             style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 7, 2, 33)),

@@ -61,7 +61,7 @@ class _RegisterState extends State<Register> {
                    mainAxisAlignment: MainAxisAlignment.center,
                    crossAxisAlignment: CrossAxisAlignment.start,
                    children: [
-                     DefaultTextStyle(
+                     const DefaultTextStyle(
                          style: TextStyle(
                            fontWeight: FontWeight.w500,
                            color: AppColors.red
@@ -76,7 +76,7 @@ class _RegisterState extends State<Register> {
                      ),
                      SizedBox(height: 3,),
 
-                     DefaultTextStyle(
+                     const DefaultTextStyle(
                          style: TextStyle(
                              fontWeight: FontWeight.w500,
                              color: AppColors.red
@@ -91,7 +91,7 @@ class _RegisterState extends State<Register> {
                      ),
                      SizedBox(height: 3,),
 
-                     DefaultTextStyle(
+                     const DefaultTextStyle(
                          style: TextStyle(
                              fontWeight: FontWeight.w500,
                              color: AppColors.red

@@ -7,6 +7,11 @@ import 'Views/StatefulWidgets/Auth/Login.dart';
 import 'Views/StatefulWidgets/Auth/OtpScreen.dart';
 import 'Views/StatefulWidgets/Auth/PinScreen.dart';
 import 'Views/StatefulWidgets/Auth/Register.dart';
+import 'Views/StatefulWidgets/Dashboard/Dashboard.dart';
+import 'Views/StatefulWidgets/Dashboard/Investment/Investment.dart';
+import 'Views/StatefulWidgets/Dashboard/Investment/SingleInvestment.dart';
+import 'Views/StatefulWidgets/Dashboard/Transactions/SingleTransaction.dart';
+import 'Views/StatefulWidgets/Dashboard/Transactions/Transactions.dart';
 import 'Views/StatefulWidgets/Others/HomeWidget.dart';
 import 'Views/StatelessWidgets/TermsAndConditions.dart';
 
@@ -41,7 +46,11 @@ class MyApp extends StatelessWidget {
         '/OtpScreen': (BuildContext context) => const OtpScreen(title: 'Otp Screen'),
         '/PinScreen': (BuildContext context) => const PinScreen(title: 'Otp Screen'),
         '/HomeWidget': (BuildContext context) => const HomeWidget(title: 'Nav Widget'),
-
+        '/Dashboard': (BuildContext context) => const Dashboard(title: 'Dashboard'),
+        '/Transactions': (BuildContext context) => const Transactions(title: 'Transactions'),
+        '/SingleTransaction': (BuildContext context) => const SingleTransaction(title: 'SingleTransaction'),
+        '/Investment': (BuildContext context) => const Investment(title: 'Investment'),
+        '/SingleInvestment': (BuildContext context) => const SingleInvestment(title: 'SingleInvestment'),
       },
     );
   }
