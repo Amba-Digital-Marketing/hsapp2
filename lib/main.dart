@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hsapp2/Views/StatefulWidgets/Auth/BaseLogin.dart';
+import 'package:hsapp2/Views/StatefulWidgets/Others/AppColors.dart';
 import 'package:hsapp2/Views/StatelessWidgets/SplashScreen.dart';
 import 'Views/StatefulWidgets/Auth/FinishSignUp.dart';
 import 'Views/StatefulWidgets/Auth/Login.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       title: 'H&S Application',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        backgroundColor: Colors.white
+        backgroundColor: AppColors.white
       ),
       home: const SplashScreen(title: 'Splash Screen'),
 

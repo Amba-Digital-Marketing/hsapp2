@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hsapp2/Views/StatefulWidgets/Others/AppColors.dart';
 
 class Register extends StatefulWidget {
   const Register({Key? key, String title = "Register"}) : super(key: key);
@@ -11,7 +12,6 @@ class Register extends StatefulWidget {
 
 class _RegisterState extends State<Register> {
 
-  Color navyBlue = const Color.fromARGB(255, 7, 2, 33);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class _RegisterState extends State<Register> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar: AppBar(
-              backgroundColor: navyBlue,
+              backgroundColor: AppColors.navyBlue,
               title: const Text("Sign Up"),
               centerTitle: true,
               leading: new IconButton(onPressed: () {
@@ -46,10 +46,10 @@ class _RegisterState extends State<Register> {
                  padding: EdgeInsets.all(10),
                  decoration: BoxDecoration(
                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.grey),
+                    border: Border.all(color: AppColors.grey),
                    boxShadow: [
                      BoxShadow(
-                       color: Colors.grey.withOpacity(0.1),
+                       color: AppColors.grey.withOpacity(0.1),
                        blurRadius: 1.0,
                        offset: Offset(0, 1),
                      ),
@@ -64,7 +64,7 @@ class _RegisterState extends State<Register> {
                      DefaultTextStyle(
                          style: TextStyle(
                            fontWeight: FontWeight.w500,
-                           color: Colors.red
+                           color: AppColors.red
                          ),
                          child: Text("Full Names")
                      ),
@@ -79,7 +79,7 @@ class _RegisterState extends State<Register> {
                      DefaultTextStyle(
                          style: TextStyle(
                              fontWeight: FontWeight.w500,
-                             color: Colors.red
+                             color: AppColors.red
                          ),
                          child: Text("Email")
                      ),
@@ -94,7 +94,7 @@ class _RegisterState extends State<Register> {
                      DefaultTextStyle(
                          style: TextStyle(
                              fontWeight: FontWeight.w500,
-                             color: Colors.red
+                             color: AppColors.red
                          ),
                          child: Text("Password")
                      ),
@@ -110,7 +110,7 @@ class _RegisterState extends State<Register> {
                      DefaultTextStyle(
                          style: TextStyle(
                              fontWeight: FontWeight.w500,
-                             color: Colors.red
+                             color: AppColors.red
                          ),
                          child: Text("Repeat password")
                      ),
@@ -128,7 +128,7 @@ class _RegisterState extends State<Register> {
                        child: const Text("Sign Up"),
                        style: ButtonStyle(
                            backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 7, 2, 33)),
-                           foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.white),
+                           foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.white),
                            shape: MaterialStateProperty.all(
                              RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
                            ),
@@ -144,7 +144,7 @@ class _RegisterState extends State<Register> {
                         onPressed: () {
                         Navigator.pushNamed(context, "/Login");
                         },
-                        style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.green)),
+                        style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.green)),
                         child: Text("Already have an Account? Login")
                     )
 

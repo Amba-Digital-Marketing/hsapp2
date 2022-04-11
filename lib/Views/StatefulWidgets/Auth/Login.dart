@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hsapp2/Views/StatefulWidgets/Others/HomeWidget.dart';
 
+import '../Others/AppColors.dart';
+
 class Login extends StatefulWidget {
   const Login({Key? key, String title = "Login"}) : super(key: key);
   // static const appBarBackground =  Color(#0B0B45);
@@ -22,7 +24,7 @@ class _LoginState extends State<Login> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(200, 10, 15, 19),
+          backgroundColor: AppColors.navyBlue,
           title: const Text("Welcome to H&S GROUP"),
           centerTitle: true,
           leading: new IconButton(onPressed: () {
@@ -93,7 +95,7 @@ class _LoginState extends State<Login> {
                                           labelText: "Enter password",
 
                                           suffixIcon: Icon(Icons.remove_red_eye),
-                                          suffixIconColor: Colors.redAccent,
+                                          suffixIconColor: AppColors.redAccent,
 
                                           //Add controller here
                                         ),
@@ -119,7 +121,7 @@ class _LoginState extends State<Login> {
                                       //add On press Listerner
                                     },
                                       child: const Text("Forgot Password?"),
-                                      style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.red)),
+                                      style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.red)),
                                     ),
                                     SizedBox(height: 10,),
 
@@ -147,7 +149,7 @@ class _LoginState extends State<Login> {
                                       child: const Text("Log in"),
                                       style: ButtonStyle(
                                           backgroundColor: MaterialStateProperty.all(Colors.red),
-                                          foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.white),
+                                          foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.white),
                                           shape: MaterialStateProperty.all(
                                             RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
                                           ),
@@ -163,7 +165,7 @@ class _LoginState extends State<Login> {
                                     onPressed: () {
                                       Navigator.pushNamed(context, "/Register");
                                     },
-                                    style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.green)),
+                                    style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.green)),
                                     child: Text("or create new Account")
                                 )
                               ],

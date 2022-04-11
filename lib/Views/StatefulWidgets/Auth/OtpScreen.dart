@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../Others/AppColors.dart';
+
 class OtpScreen extends StatefulWidget {
   const OtpScreen({Key? key, String title = "Otp Screen"}) : super(key: key);
 
@@ -11,6 +13,7 @@ class OtpScreen extends StatefulWidget {
 class _OtpScreenState extends State<OtpScreen> {
   @override
   Widget build(BuildContext context) {
+
     double width = MediaQuery.of(context). size. width;
     double height = MediaQuery.of(context). size. height;
     return MaterialApp(
@@ -47,7 +50,6 @@ class _OtpScreenState extends State<OtpScreen> {
                      ),
                      TextFormField(
                        decoration: InputDecoration(
-
                            labelText: 'Enter OTP from Phone',
                            hintText: 'Input OTP',
 
@@ -58,8 +60,8 @@ class _OtpScreenState extends State<OtpScreen> {
                        onPressed: (){},
                        child: const Text("Proceed"),
                        style: ButtonStyle(
-                           backgroundColor: MaterialStateProperty.all(Colors.red),
-                           foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.white),
+                           backgroundColor: MaterialStateProperty.all(AppColors.red),
+                           foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.white),
                            shape: MaterialStateProperty.all(
                              RoundedRectangleBorder(borderRadius: BorderRadius.circular(1)),
                            ),
@@ -71,15 +73,15 @@ class _OtpScreenState extends State<OtpScreen> {
                      Container(
                        padding: EdgeInsets.all(5),
                        decoration: BoxDecoration(
-                         color: Colors.red,
+                         color: AppColors.red,
 
                        ),
                        child: TextButton(
                          onPressed: (){},
                          child: const Text("Resend"),
                          style: ButtonStyle(
-                             backgroundColor: MaterialStateProperty.all(Colors.white),
-                             foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.red),
+                             backgroundColor: MaterialStateProperty.all(AppColors.white),
+                             foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.red),
                             // padding: MaterialStateProperty.all(EdgeInsets.all(10)),
                              shape: MaterialStateProperty.all(
                                RoundedRectangleBorder(
@@ -98,7 +100,7 @@ class _OtpScreenState extends State<OtpScreen> {
                          onPressed: () {
 
                          },
-                         style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.green)),
+                         style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.green)),
                          child: Text("or use another Account")
                      )
                    ],

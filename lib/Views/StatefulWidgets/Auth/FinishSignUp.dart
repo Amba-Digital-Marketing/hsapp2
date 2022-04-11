@@ -2,6 +2,8 @@ import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../Others/AppColors.dart';
+
 class FinishSignUp extends StatefulWidget {
   const FinishSignUp({Key? key, title = "FinishSignUp"}) : super(key: key);
   @override
@@ -9,7 +11,7 @@ class FinishSignUp extends StatefulWidget {
 }
 
 class _FinishSignUpState extends State<FinishSignUp> {
-  Color navyBlue = const Color.fromARGB(255, 7, 2, 33);
+
 //Boolean variables for checkbox
   bool valuefirst = false;
   bool valuesecond = false;
@@ -23,7 +25,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar: AppBar(
-              backgroundColor: navyBlue,
+              backgroundColor: AppColors.navyBlue,
               title: const Text("Sign Up"),
               centerTitle: true,
               leading: new IconButton(onPressed: () {
@@ -64,7 +66,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                           DefaultTextStyle(
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
-                                  color: Colors.red
+                                  color: AppColors.red
                               ),
                               child: Text("Id Number")
                           ),
@@ -79,7 +81,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                           DefaultTextStyle(
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
-                                  color: Colors.red
+                                  color: AppColors.red
                               ),
                               child: Text("Choose country Code")
                           ),
@@ -106,7 +108,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                           const DefaultTextStyle(
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
-                                  color: Colors.red
+                                  color: AppColors.red
                               ),
                               child: Text("Phone Number")
                           ),
@@ -121,7 +123,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                           DefaultTextStyle(
                               style: TextStyle(
                                   fontWeight: FontWeight.w500,
-                                  color: Colors.red
+                                  color: AppColors.red
                               ),
                               child: Text("Upload Id/Passport photo")
                           ),
@@ -139,8 +141,8 @@ class _FinishSignUpState extends State<FinishSignUp> {
                           Row(
                             children: [
                            Checkbox(
-                          checkColor: Colors.greenAccent,
-                          activeColor: Colors.red,
+                          checkColor: AppColors.greenAccent,
+                          activeColor: AppColors.red,
                           value: this.valuefirst,
                           onChanged: (bool? value) {
                           setState(() {
@@ -158,7 +160,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                               Navigator.pushNamed(context, '/TermsAndConditions');
                               },
                                 child: const Text(" Terms and Conditions"),
-                                style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.deepPurple)),
+                                style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.deepPurple)),
                               ),
                           ],
                           ),
@@ -168,7 +170,7 @@ class _FinishSignUpState extends State<FinishSignUp> {
                             child: const Text("Complete Sign Up"),
                             style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 7, 2, 33)),
-                                foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.white),
+                                foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.white),
                                 shape: MaterialStateProperty.all(
                                   RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
                                 ),

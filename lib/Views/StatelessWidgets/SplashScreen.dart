@@ -3,6 +3,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../StatefulWidgets/Others/AppColors.dart';
+
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key, String title = "Splash Screen" }) : super(key: key);
@@ -21,7 +23,7 @@ class SplashScreen extends StatelessWidget {
     });
 
     return Container(
-      color: Colors.white,
+      color: AppColors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
