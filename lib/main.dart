@@ -8,10 +8,11 @@ import 'Views/StatefulWidgets/Auth/OtpScreen.dart';
 import 'Views/StatefulWidgets/Auth/PinScreen.dart';
 import 'Views/StatefulWidgets/Auth/Register.dart';
 import 'Views/StatefulWidgets/Dashboard/Dashboard.dart';
-import 'Views/StatefulWidgets/Dashboard/Investment/Investment.dart';
-import 'Views/StatefulWidgets/Dashboard/Investment/SingleInvestment.dart';
-import 'Views/StatefulWidgets/Dashboard/Transactions/SingleTransaction.dart';
-import 'Views/StatefulWidgets/Dashboard/Transactions/Transactions.dart';
+import 'Views/StatefulWidgets/Dashboard/EDeposit/edeposit.dart';
+import 'Views/StatefulWidgets/Dashboard/Histories/Investment/Investment.dart';
+import 'Views/StatefulWidgets/Dashboard/Histories/Investment/SingleInvestment.dart';
+import 'Views/StatefulWidgets/Dashboard/Histories/Transactions/SingleTransaction.dart';
+import 'Views/StatefulWidgets/Dashboard/Histories/Transactions/Transactions.dart';
 import 'Views/StatefulWidgets/Others/HomeWidget.dart';
 import 'Views/StatelessWidgets/TermsAndConditions.dart';
 
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         '/splashScreen': (BuildContext context) => const SplashScreen(title: 'Splash Screen'),
         '/BaseLogin': (BuildContext context) => const BaseLogin(title: 'Base Login'),
         '/Login': (BuildContext context) => const Login(title: 'Login'),
+        '/edeposit': (BuildContext context) => const Edeposit(title: 'Login'),
         '/FinishSignUp': (BuildContext context) => const FinishSignUp(title: 'FinishSignUp'),
         '/Register': (BuildContext context) => const Register(title: 'Register'),
         '/TermsAndConditions': (BuildContext context) => const TermsAndConditions(title: 'TermsAndConditions'),

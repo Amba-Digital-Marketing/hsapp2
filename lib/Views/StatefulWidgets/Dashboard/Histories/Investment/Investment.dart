@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import '../../Others/AppColors.dart';
+import '../../../Others/AppColors.dart';
+
 
 class Investment extends StatefulWidget {
   const Investment({Key? key, String title = "Investment"}) : super(key: key);
@@ -65,7 +66,10 @@ class _InvestmentState extends State<Investment> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text("Your Investment History", style: TextStyle(color: AppColors.green, fontWeight: FontWeight.w900),),
+                    Text("Your Investment History",
+                      style: TextStyle(color: AppColors.green,
+                      fontWeight: FontWeight.w900),
+                    ),
                   ],
                 ),
 

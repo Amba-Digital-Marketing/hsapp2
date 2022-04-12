@@ -11,7 +11,7 @@ class _LocationState extends State<Location> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: const Text("Location"),
+      child: const Center(child: Text("Location")),
     );
   }
 }

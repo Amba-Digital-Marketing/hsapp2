@@ -34,7 +34,7 @@ class _RegisterState extends State<Register> {
            child: Container(
              width: ScreenWidth,
              height: ScreenHeight,
-            margin: EdgeInsets.only(top: 50),
+            margin: EdgeInsets.only(top: 30),
 
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -42,7 +42,7 @@ class _RegisterState extends State<Register> {
 
               children: [
                 Container(
-                  width: 280,
+                  width: 300,
                  padding: EdgeInsets.all(10),
                  decoration: BoxDecoration(
                    borderRadius: BorderRadius.circular(10),
@@ -57,10 +57,11 @@ class _RegisterState extends State<Register> {
                    ]
 
                  ),
-                 child: Column(
-                   mainAxisAlignment: MainAxisAlignment.center,
-                   crossAxisAlignment: CrossAxisAlignment.start,
-                   children: [
+
+                  child: Column(
+                     mainAxisAlignment: MainAxisAlignment.center,
+                     crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
                      const DefaultTextStyle(
                          style: TextStyle(
                            fontWeight: FontWeight.w500,

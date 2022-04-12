@@ -11,7 +11,7 @@ class _ContactUsState extends State<ContactUs> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: const Text("Contact Us"),
+      child: const Center(child: Text("Contact Us")),
     );
   }
 }

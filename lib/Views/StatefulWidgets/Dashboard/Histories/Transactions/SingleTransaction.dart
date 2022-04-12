@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../../../Others/AppColors.dart';
 
-import '../../Others/AppColors.dart';
 
 class SingleTransaction extends StatefulWidget {
   const SingleTransaction({Key? key, String title = "SingleTransaction"}) : super(key: key);

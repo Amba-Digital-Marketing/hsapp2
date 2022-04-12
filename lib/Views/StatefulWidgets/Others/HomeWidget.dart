@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hsapp2/Views/StatefulWidgets/Auth/Login.dart';
-import 'package:hsapp2/Views/StatefulWidgets/Dashboard/ContactUs.dart';
-import 'package:hsapp2/Views/StatefulWidgets/Dashboard/Location.dart';
+import 'package:hsapp2/Views/StatefulWidgets/Dashboard/SideMenu/ContactUs.dart';
+import 'package:hsapp2/Views/StatefulWidgets/Dashboard/SideMenu/Location.dart';
 
 
 class HomeWidget extends StatefulWidget {

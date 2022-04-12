@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../Others/AppColors.dart';
+import '../../../Others/AppColors.dart';
+
 
 class SingleInvestment extends StatefulWidget {
   const SingleInvestment({Key? key, String title = "SingleInvestment"}) : super(key: key);
@@ -22,7 +23,7 @@ class _SingleInvestmentState extends State<SingleInvestment> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColors.navyBlue,
-          title: const Text("Transaction Detail"),
+          title: const Text("Investment Detail"),
           centerTitle: true,
           leading: new IconButton(onPressed: () {
             Navigator.pop(context);

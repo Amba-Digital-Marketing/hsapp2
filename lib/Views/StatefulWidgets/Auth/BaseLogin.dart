@@ -125,7 +125,7 @@ class BaseLogin extends StatelessWidget {
                                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
                               ),
                               padding:MaterialStateProperty.all<EdgeInsets>(
-                                EdgeInsets.all(20),
+                                EdgeInsets.all(10),
                               ),
                             fixedSize: MaterialStateProperty.all(Size(200, 50))
                             ),
