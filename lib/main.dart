@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hsapp2/Views/StatefulWidgets/Auth/BaseLogin.dart';
+import 'package:hsapp2/Views/StatefulWidgets/Dashboard/Histories/Deposit/deposit.dart';
 import 'package:hsapp2/Views/StatefulWidgets/Others/AppColors.dart';
 import 'package:hsapp2/Views/StatelessWidgets/SplashScreen.dart';
 import 'Views/StatefulWidgets/Auth/FinishSignUp.dart';
@@ -11,6 +12,8 @@ import 'Views/StatefulWidgets/Dashboard/Dashboard.dart';
 import 'Views/StatefulWidgets/Dashboard/EDeposit/edeposit.dart';
 import 'Views/StatefulWidgets/Dashboard/Histories/Investment/Investment.dart';
 import 'Views/StatefulWidgets/Dashboard/Histories/Investment/SingleInvestment.dart';
+import 'Views/StatefulWidgets/Dashboard/Histories/Loans/LoanHistory.dart';
+import 'Views/StatefulWidgets/Dashboard/Histories/Loans/singleLoan.dart';
 import 'Views/StatefulWidgets/Dashboard/Histories/Transactions/SingleTransaction.dart';
 import 'Views/StatefulWidgets/Dashboard/Histories/Transactions/Transactions.dart';
 import 'Views/StatefulWidgets/Others/HomeWidget.dart';
@@ -53,6 +56,9 @@ class MyApp extends StatelessWidget {
         '/SingleTransaction': (BuildContext context) => const SingleTransaction(title: 'SingleTransaction'),
         '/Investment': (BuildContext context) => const Investment(title: 'Investment'),
         '/SingleInvestment': (BuildContext context) => const SingleInvestment(title: 'SingleInvestment'),
+        '/LoanHistory': (BuildContext context) => const LoanHistory(title: 'LoanHistory'),
+        '/SingleLoan': (BuildContext context) => const SingleLoan(title: 'Investment'),
+        '/DepositHistory': (BuildContext context) => const Deposit(title: 'DepositHistory'),
       },
     );
   }
