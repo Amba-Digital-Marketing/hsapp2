@@ -16,6 +16,9 @@ import 'Views/StatefulWidgets/Dashboard/Histories/Loans/LoanHistory.dart';
 import 'Views/StatefulWidgets/Dashboard/Histories/Loans/singleLoan.dart';
 import 'Views/StatefulWidgets/Dashboard/Histories/Transactions/SingleTransaction.dart';
 import 'Views/StatefulWidgets/Dashboard/Histories/Transactions/Transactions.dart';
+import 'Views/StatefulWidgets/Dashboard/Transfers/PayBeneficiaries.dart';
+import 'Views/StatefulWidgets/Dashboard/Transfers/Transfer.dart';
+import 'Views/StatefulWidgets/Dashboard/Withdraw/withdraw.dart';
 import 'Views/StatefulWidgets/Others/HomeWidget.dart';
 import 'Views/StatelessWidgets/TermsAndConditions.dart';
 
@@ -58,6 +61,9 @@ class MyApp extends StatelessWidget {
         '/SingleInvestment': (BuildContext context) => const SingleInvestment(title: 'SingleInvestment'),
         '/LoanHistory': (BuildContext context) => const LoanHistory(title: 'LoanHistory'),
         '/SingleLoan': (BuildContext context) => const SingleLoan(title: 'Investment'),
+        '/Transfer': (BuildContext context) => const Transfer(title: 'Transfer'),
+        '/Withdraw': (BuildContext context) => const Withdraw(title: 'Withdraw'),
+        '/PayBeneficiaries': (BuildContext context) => const PayBeneficiaries(title: 'PayBeneficiaries'),
         '/DepositHistory': (BuildContext context) => const Deposit(title: 'DepositHistory'),
       },
     );

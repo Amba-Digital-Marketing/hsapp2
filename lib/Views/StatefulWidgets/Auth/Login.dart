@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hsapp2/Views/StatefulWidgets/Others/HomeWidget.dart';
+
 
 import '../Others/AppColors.dart';
 
@@ -145,7 +145,9 @@ class _LoginState extends State<Login> {
                                     SizedBox(width: 20,),
 
                                     TextButton(
-                                      onPressed: (){},
+                                      onPressed: (){
+                                        Navigator.pushNamed(context, "/Dashboard");
+                                      },
                                       child: const Text("Log in"),
                                       style: ButtonStyle(
                                           backgroundColor: MaterialStateProperty.all(Colors.red),

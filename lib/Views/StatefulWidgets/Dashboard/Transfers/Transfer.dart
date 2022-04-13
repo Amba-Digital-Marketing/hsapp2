@@ -1,18 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hsapp2/Views/StatefulWidgets/Dashboard/Histories/Deposit/depositHistory.dart';
-import 'package:hsapp2/Views/StatefulWidgets/Dashboard/Histories/Deposit/mpesaHistory.dart';
-import '../../../Others/AppColors.dart';
+import 'package:hsapp2/Views/StatefulWidgets/Dashboard/Transfers/ExternalTransfers.dart';
+import 'package:hsapp2/Views/StatefulWidgets/Dashboard/Transfers/internalTransfers.dart';
+import '../../Others/AppColors.dart';
 
 
-class Deposit extends StatefulWidget {
-  const Deposit({Key? key, String title = "depositHistory"}) : super(key: key);
+
+class Transfer extends StatefulWidget {
+  const Transfer({Key? key, String title = "Transfers"}) : super(key: key);
 
   @override
-  _DepositState createState() => _DepositState();
+  _TransferState createState() => _TransferState();
 }
 
-class _DepositState extends State<Deposit> {
+class _TransferState extends State<Transfer> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,14 +24,14 @@ class _DepositState extends State<Deposit> {
           appBar: AppBar(
               backgroundColor: AppColors.navyBlue,
               title: Container(
-                  margin: EdgeInsets.symmetric(vertical: 2),
-                  child: const Text("Deposit History",)
+                  margin: const EdgeInsets.symmetric(vertical: 2),
+                  child: const Text("Transfer Money",)
               ),
               centerTitle: true,
-              leading: new IconButton(onPressed: () {
+              leading:  IconButton(onPressed: () {
                 Navigator.pop(context);
               },
-                icon: new Icon(Icons.arrow_back),),
+                icon:  Icon(Icons.arrow_back),),
 
               bottom: PreferredSize(
                 preferredSize: Size.fromHeight(kToolbarHeight),
@@ -40,8 +41,8 @@ class _DepositState extends State<Deposit> {
                     labelColor: AppColors.green,
                     unselectedLabelColor: AppColors.navyBlue,
                     tabs: [
-                      Tab(child: Text("DEPOSIT HISTORY" ),),
-                      Tab(child: Text("M~PESA HISTORY"),),
+                      Tab(child: Text("INTERNAL TRANSFER" ),),
+                      Tab(child: Text("OTHER BANKS"),),
                     ],
                   ),
                 ),
@@ -49,8 +50,8 @@ class _DepositState extends State<Deposit> {
           ),
 
           body: TabBarView(children: [
-            DepositHistory(),
-            MpesaHistory()
+            InternalTransfers(),
+            ExternalTransfers()
           ]),
         ),
       ),
