@@ -57,7 +57,6 @@ class BaseLogin extends StatelessWidget {
 
                         children: [
                           Container(
-                            height: 40,
                             width: 300,
                             margin: EdgeInsets.all(10.0),
                             child: Column(
@@ -106,60 +105,55 @@ class BaseLogin extends StatelessWidget {
                         ],
                       ),
 
-                      const SizedBox(height: 100,),
+                      const SizedBox(height: 50,),
 
-                      Column(
-                        children: [
-                          TextButton(
-                            onPressed: ()=>{
-                              //Navigate to a new Activity
-                              Navigator.pushNamed(context, '/Register'),
-                            },
-                            child: const Text("Register Now"),
+                      TextButton(
+                        onPressed: ()=>{
+                          //Navigate to a new Activity
+                          Navigator.pushNamed(context, '/Register'),
+                        },
+                        child: const Text("Register Now"),
 
-                            style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Colors.red),
-                              foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.white),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all(Colors.red),
+                          foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.white),
+                          shape: MaterialStateProperty.all(
+
+                            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                          ),
+                          padding:MaterialStateProperty.all<EdgeInsets>(
+                            EdgeInsets.all(10),
+                          ),
+                        fixedSize: MaterialStateProperty.all(Size(200, 50))
+                        ),
+                      ),
+
+                      SizedBox(height: 20,),
+                      Container(
+                        padding: EdgeInsets.all(5),
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+
+                        ),
+                        child: TextButton(
+                          onPressed: (){
+                            Navigator.pushNamed(context, '/HomeWidget');
+                          },
+                          child: const Text("Sign In"),
+                          style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.white),
+                              foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.red),
+                              // padding: MaterialStateProperty.all(EdgeInsets.all(10)),
                               shape: MaterialStateProperty.all(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
 
-                                RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                                ),
+
                               ),
-                              padding:MaterialStateProperty.all<EdgeInsets>(
-                                EdgeInsets.all(10),
-                              ),
-                            fixedSize: MaterialStateProperty.all(Size(200, 50))
-                            ),
+                              fixedSize: MaterialStateProperty.all(Size(200, 50))
                           ),
-
-                          SizedBox(height: 20,),
-                          Container(
-                            padding: EdgeInsets.all(5),
-                            decoration: BoxDecoration(
-                              color: Colors.red,
-
-                            ),
-                            child: TextButton(
-                              onPressed: (){
-                                Navigator.pushNamed(context, '/HomeWidget');
-                              },
-                              child: const Text("Sign In"),
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(Colors.white),
-                                  foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.red),
-                                  // padding: MaterialStateProperty.all(EdgeInsets.all(10)),
-                                  shape: MaterialStateProperty.all(
-                                    RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(5),
-
-                                    ),
-
-                                  ),
-                                  fixedSize: MaterialStateProperty.all(Size(200, 50))
-                              ),
-                            ),
-                          ),
-
-                        ],
+                        ),
                       )
                     ],
                   ),

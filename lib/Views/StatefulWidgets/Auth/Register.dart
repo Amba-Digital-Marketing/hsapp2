@@ -69,12 +69,14 @@ class _RegisterState extends State<Register> {
                          ),
                          child: Text("Full Names")
                      ),
+
                      TextFormField(
                        decoration: InputDecoration(
                          hintText: 'Enter full names',
 
                        ),
                      ),
+
                      SizedBox(height: 3,),
 
                      const DefaultTextStyle(

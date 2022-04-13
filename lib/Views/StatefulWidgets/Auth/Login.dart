@@ -118,7 +118,7 @@ class _LoginState extends State<Login> {
                                     const SizedBox(height: 20,),
 
                                     TextButton(onPressed: (){
-                                      //add On press Listerner
+                                      Navigator.pushNamed(context, "/ResetPassword");
                                     },
                                       child: const Text("Forgot Password?"),
                                       style: ButtonStyle(foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.red)),
