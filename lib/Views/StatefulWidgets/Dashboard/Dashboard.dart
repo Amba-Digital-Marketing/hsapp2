@@ -147,6 +147,22 @@ class _DashboardState extends State<Dashboard> {
                  fixedSize: MaterialStateProperty.all(Size(250, 40))
              ),
            ),
+           SizedBox(height: 10,),
+
+           TextButton(
+             onPressed: (){
+               Navigator.pushNamed(context, "/Account");
+             },
+             child: const Text("Account"),
+             style: ButtonStyle(
+                 backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 7, 2, 33)),
+                 foregroundColor: MaterialStateProperty.resolveWith((states) => AppColors.white),
+                 shape: MaterialStateProperty.all(
+                   RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                 ),
+                 fixedSize: MaterialStateProperty.all(Size(250, 40))
+             ),
+           ),
 
          ],
        ),

@@ -9,6 +9,7 @@ import 'Views/StatefulWidgets/Auth/OtpScreen.dart';
 import 'Views/StatefulWidgets/Auth/PinScreen.dart';
 import 'Views/StatefulWidgets/Auth/Register.dart';
 import 'Views/StatefulWidgets/Auth/resetPassword.dart';
+import 'Views/StatefulWidgets/Dashboard/Account/account.dart';
 import 'Views/StatefulWidgets/Dashboard/Dashboard.dart';
 import 'Views/StatefulWidgets/Dashboard/EDeposit/edeposit.dart';
 import 'Views/StatefulWidgets/Dashboard/Histories/Investment/Investment.dart';
@@ -75,6 +76,7 @@ class MyApp extends StatelessWidget {
         '/GoldInvestment': (BuildContext context) => const GoldInvestment(title: 'GoldInvestment'),
         '/PlatinumInvestment': (BuildContext context) => const PlatinumInvestment(title: 'PlatinumInvestment'),
         '/DepositHistory': (BuildContext context) => const Deposit(title: 'DepositHistory'),
+        '/Account': (BuildContext context) => const Account(title: 'Account'),
       },
     );
   }

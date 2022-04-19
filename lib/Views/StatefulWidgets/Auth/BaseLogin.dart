@@ -36,7 +36,7 @@ class BaseLogin extends StatelessWidget {
                         width: 500,
                         decoration: BoxDecoration(
                           image: const DecorationImage(
-                            image: AssetImage("Assets/Images/logo.png"),
+                            image: AssetImage("Assets/Images/logo.jpeg"),
                           ),
                         ),
                       ),

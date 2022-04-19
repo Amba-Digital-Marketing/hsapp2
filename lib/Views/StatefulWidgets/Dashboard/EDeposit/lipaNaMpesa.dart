@@ -36,7 +36,7 @@ class _LipaNaMpesaState extends State<LipaNaMpesa> {
               ),
               child: Column(
                 children: [
-                  Image(image: AssetImage("Assets/Images/lipanampesa.png")),
+                  Container( height: 190,child: Image(image: AssetImage("Assets/Images/lipanampesa.png"))),
 
                   SizedBox(height: 10,),
                   Text("M~pesa"),
