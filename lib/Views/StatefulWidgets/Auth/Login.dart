@@ -40,7 +40,7 @@ class _LoginState extends State<Login> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-
+                    
                     width: width,
                     child: Expanded(
                       child: Column(
@@ -175,8 +175,7 @@ class _LoginState extends State<Login> {
                           ),
 
                           SizedBox(height: 110,),
-
-
+                          
                         ],
                       ),
                     ),
