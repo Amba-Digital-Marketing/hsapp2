@@ -22,6 +22,12 @@ import 'Views/StatefulWidgets/Dashboard/Invest/GoldInvestment.dart';
 import 'Views/StatefulWidgets/Dashboard/Invest/PlatinumInvestment.dart';
 import 'Views/StatefulWidgets/Dashboard/Invest/StandardInvestment.dart';
 import 'Views/StatefulWidgets/Dashboard/Invest/investmentPackages.dart';
+import 'Views/StatefulWidgets/Dashboard/Loans/AssetFinanceLoans.dart';
+import 'Views/StatefulWidgets/Dashboard/Loans/BusinessLoans.dart';
+import 'Views/StatefulWidgets/Dashboard/Loans/ChamaLoans.dart';
+import 'Views/StatefulWidgets/Dashboard/Loans/Loans.dart';
+import 'Views/StatefulWidgets/Dashboard/Loans/LogBookLoans.dart';
+import 'Views/StatefulWidgets/Dashboard/Loans/PersonalLoans.dart';
 import 'Views/StatefulWidgets/Dashboard/Transfers/PayBeneficiaries.dart';
 import 'Views/StatefulWidgets/Dashboard/Transfers/Transfer.dart';
 import 'Views/StatefulWidgets/Dashboard/Withdraw/withdraw.dart';
@@ -76,7 +82,14 @@ class MyApp extends StatelessWidget {
         '/GoldInvestment': (BuildContext context) => const GoldInvestment(title: 'GoldInvestment'),
         '/PlatinumInvestment': (BuildContext context) => const PlatinumInvestment(title: 'PlatinumInvestment'),
         '/DepositHistory': (BuildContext context) => const Deposit(title: 'DepositHistory'),
+        '/Loans': (BuildContext context) => const Loans(title: 'Loans'),
+        '/ChamaLoans': (BuildContext context) => const ChamaLoans(title: 'Chama Loans'),
         '/Account': (BuildContext context) => const Account(title: 'Account'),
+        '/LogBookLoans': (BuildContext context) => const LogBookLoans(title: 'LogBookLoans'),
+        '/BusinessLoans': (BuildContext context) => const BusinessLoans(title: 'BusinessLoans'),
+        '/AssetFinanceLoans': (BuildContext context) => const AssetFinanceLoans(title: 'AssetFinance Loans'),
+        '/PersonalLoans': (BuildContext context) => const PersonalLoans(title: 'PersonalLoans'),
+
       },
     );
   }

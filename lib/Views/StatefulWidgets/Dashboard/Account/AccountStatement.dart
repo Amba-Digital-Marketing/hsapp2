@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../../Others/AppColors.dart';
 
+
 class AccountStatement extends StatefulWidget {
   const AccountStatement({Key? key}) : super(key: key);
 
@@ -12,7 +13,12 @@ class AccountStatement extends StatefulWidget {
 class _AccountStatementState extends State<AccountStatement> {
   @override
   Widget build(BuildContext context) {
+    double ScreenWidth = MediaQuery.of(context).size.width;
+    double ScreenHeight = MediaQuery.of(context).size.height;
+
     return Container(
+      width: ScreenWidth,
+      height: ScreenHeight,
       margin: EdgeInsets.only(top: 20,left: 10,right: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -35,10 +41,10 @@ class _AccountStatementState extends State<AccountStatement> {
                         children: [
                           GestureDetector(
                             onTap: () {
-                              Navigator.pushNamed(context, "/PlatinumInvestment");
+                              Navigator.pushNamed(context, "/Transactions");
                             },
                             child: Container(
-                              margin: EdgeInsets.only(left: 40, bottom: 10),
+                              margin: EdgeInsets.only(left: 30, bottom: 10),
                               height: 50,
                               padding: EdgeInsets.all(10),
                               decoration: BoxDecoration(
@@ -54,20 +60,20 @@ class _AccountStatementState extends State<AccountStatement> {
 
                           SizedBox(height: 2,),
 
-                          Text("H&S Group Transfer", style: TextStyle(color: AppColors.green, fontWeight: FontWeight.w400),),
+                          Text("H&S Group Transfer", style: TextStyle(color: AppColors.green, fontWeight: FontWeight.w400,fontSize: 15),),
 
                         ],
                       ),
-                      SizedBox(width: 20,),
+                      SizedBox(width: 10,),
 
                       Column(
                         children: [
                           GestureDetector(
                             onTap: () {
-                              Navigator.pushNamed(context, "/PlatinumInvestment");
+                              Navigator.pushNamed(context, "/Transactions");
                             },
                             child: Container(
-                              margin: EdgeInsets.only(left: 40, bottom: 10),
+                              margin: EdgeInsets.only(left: 30, bottom: 10),
                               height: 50,
                               padding: EdgeInsets.all(10),
                               decoration: BoxDecoration(
@@ -83,7 +89,7 @@ class _AccountStatementState extends State<AccountStatement> {
 
                           SizedBox(height: 2,),
 
-                          Text("Other Bank Transfer", style: TextStyle(color: AppColors.green, fontWeight: FontWeight.w400),),
+                          Text("Other Bank Transfer", style: TextStyle(color: AppColors.green, fontWeight: FontWeight.w400,fontSize: 15),),
 
                         ],
                       )
@@ -101,10 +107,10 @@ class _AccountStatementState extends State<AccountStatement> {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.pushNamed(context, "/PlatinumInvestment");
+                            Navigator.pushNamed(context, "/edeposit");
                           },
                           child: Container(
-                            margin: EdgeInsets.only(left: 40, bottom: 10),
+                            margin: EdgeInsets.only(left: 30, bottom: 10),
                             height: 50,
                             padding: EdgeInsets.all(10),
                             decoration: BoxDecoration(
@@ -124,7 +130,7 @@ class _AccountStatementState extends State<AccountStatement> {
 
                       ],
                     ),
-                    SizedBox(width: 20,),
+                    SizedBox(width: 40,),
 
                     Column(
                       children: [
@@ -133,7 +139,7 @@ class _AccountStatementState extends State<AccountStatement> {
                             Navigator.pushNamed(context, "/PlatinumInvestment");
                           },
                           child: Container(
-                            margin: EdgeInsets.only(left: 40, bottom: 10),
+                            margin: EdgeInsets.only(left: 30, bottom: 10),
                             height: 50,
                             padding: EdgeInsets.all(10),
                             decoration: BoxDecoration(
